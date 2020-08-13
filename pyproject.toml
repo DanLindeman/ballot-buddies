@@ -1,14 +1,32 @@
 [tool.poetry]
 name = "ballot-buddies"
 version = "0.1.0"
-description = ""
+description = "A ballot accountability networking site"
 authors = ["Dan Lindeman <lindemda@gmail.com>"]
+license = "GPLv3"
+
+packages = [
+    { include = "app" },
+]
+
 
 [tool.poetry.dependencies]
 python = "^3.8"
+quart = "^0.13.0"
+aiohttp = "^3.6.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+black = "^19.10b0"
+isort = "4.3.21"
+mypy = "^0.782"
+pylint = "^2.5.3"
+pytest-asyncio = "^0.14.0"
+pytest-vcr = "^1.0.2"
+pytest-describe = "^1.0.0"
+pytest-expecter = "^2.2"
+pytest-cov = "^2.10.0"
+pytest-watch = "^4.2.0"
 
 [build-system]
 requires = ["poetry>=0.12"]
