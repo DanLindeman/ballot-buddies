@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    </head>
+    <body>
+        <div>
+            <p>Welcome, {{ session_data['first_name'] }}</p>
+            <p>Your Absentee Voting Data:</p>
+            <p>Application Received On: {{ status['absentee_application_received'] or "TBD" }}</p>
+            <p>Ballot Sent On: {{ status['absentee_ballot_sent'] or "TBD" }} </p>
+            <p>Ballot Received On: {{ status['absentee_ballot_received'] or "TBD" }}</p>
+        </div>
+    </body>
+</html>
