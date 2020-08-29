@@ -15,7 +15,7 @@ def run():
             print()
             time.sleep(3)
         else:
-            app.run(debug=True)
+            app.run(host="0.0.0.0", debug=True)
             break
 
 

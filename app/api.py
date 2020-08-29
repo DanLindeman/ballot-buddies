@@ -3,9 +3,9 @@ from typing import Dict, List, Tuple
 
 import aiohttp
 
-# BASE_URL = "https://michiganelections.io/api"
+BASE_URL = "https://michiganelections.io/api"
 
-BASE_URL = "https://mi-elections-staging-pr-188.herokuapp.com/api"
+# BASE_URL = "https://mi-elections-staging-pr-188.herokuapp.com/api"
 
 async def get_status(
     first_name: str, last_name: str, birth_date: str, zip_code: int

@@ -41,4 +41,12 @@ async def login():
 async def friends(user_id: int):
     u = User.query.get(session["user_id"])
     status = await api.get_status(**u.form())
+    # {
+    #     'registered': False,
+    #     'absentee_application_received': None,
+    #     'absentee': False,
+    #     'absentee_ballot_sent': None,
+    #     'absentee_ballot_received': None,
+    # }
+    print(status)
     return await render_template("friends.html", status=status, session_data=u)
