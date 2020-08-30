@@ -10,3 +10,10 @@ __pycache__/
 # Testing
 .pytest_cache/
 .coverage
+
+# Dev DB
+app/app.db
+
+# Env
+
+.envrc
